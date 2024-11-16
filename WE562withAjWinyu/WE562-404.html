@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Function in JS</title>
+</head>
+<body>
+    <script>
+        function calc(myform) /* user-defined function */
+        {
+            var result = parseInt(myform.number1.value)+parseInt(myform.number2.value);
+            /* this.form.name = 'TEST' */
+            alert(result);
+        }
+    </script>
+    <form name="inputfield">
+        กรอกเลขค่าที่ 1 = <input type="text" name="number1"> <br>
+        กรอกเลขค่าที่ 2 = <input type="text" name="number2"> <br>
+        <input type="button" value="Calculate" onclick="calc(this.form)">
+    </form>
+</body>
+</html>
